@@ -299,7 +299,7 @@
     }
     .about-img {
       width: 100%;
-      aspect-ratio: 3/4;
+      aspect-ratio: 2/1.5;
       object-fit: cover;
       display: block;
       filter: grayscale(30%);
