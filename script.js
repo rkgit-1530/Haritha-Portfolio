@@ -61,23 +61,6 @@
       });
     });
 
-    // FORM SUBMIT
-    function handleSubmit(e) {
-      e.preventDefault();
-      const btn = document.getElementById('submitBtn');
-      btn.textContent = 'Sending...';
-      btn.disabled = true;
-      setTimeout(() => {
-        btn.textContent = 'Message Sent ✓';
-        btn.style.background = '#22c55e';
-        e.target.reset();
-        setTimeout(() => {
-          btn.textContent = 'Send Message →';
-          btn.style.background = '';
-          btn.disabled = false;
-        }, 3000);
-      }, 1200);
-    }
 
     // STAGGER reveal for grid children
     document.querySelectorAll('.skills-grid, .certs-grid').forEach(grid => {
